@@ -1,11 +1,25 @@
-Breakpoint 1 at 0x280: file source/main.c, line 103.
+Breakpoint 1 at 0x324: file source/main.c, line 143.
 Note: automatically using hardware breakpoints for read-only addresses.
 ======================================================
 Running all tests..."
 
-"PINA: 0x01, 0x03, 0x07 => PORTB: 0x00, state: init"..."PINA: 0x01, 0x04, 0x00, 0x02 => PORTB: 0x01, state: unlock"..."PINA: 0x01, 0x04, 0x00, 0x02, 0x80 => PORTB: 0x01, state: init"..."button at a time test : PINA: 0x01, 0x06, 0x00, 0x02 => PORTB: 0x00, state: init"..."PORTB = 0x01, PINA: 0x01, 0x04, 0x00, 0x02=> PORTB: 0x00, state: init"...$1 = 1 '\001'
-$2 = Hash
-$3 = init
-$4 = 0 '\000'
+"PINA: 0x01, 0x03, 0x07 => PORTB: 0x00, state: init"..."PINA: 0x01, 0x04, 0x00, 0x01, 0x00, 0x02, 0x00, 0x01 => PORTB: 0x01, state: unlock"...
+$1 = Hash
+$2 = waitY
+$3 = 0 '\000'
+$4 = X
+$5 = 1 '\001'
+$6 = waitY
+$7 = 1 '\001'
+comb[i]:$8 = 2 '\002'
+$9 = Y
+$10 = 2 '\002'
+$11 = waitY
+$12 = 2 '\002'
+$13 = unlock
+$14 = 2 '\002'
+$15 = unlock
+$16 = 2 '\002'
+"button at a time test : PINA: 0x01, 0x06, 0x00, 0x02 => PORTB: 0x00, state: init"..."PINA: 0x04, 0x00, 0x01, 0x00, 0x02, 0x01, 0x00 => PORTB: 0x01, state: init"...$17 = unlock
 ======================================================
 Remote doesn't know how to detach
