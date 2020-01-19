@@ -58,18 +58,23 @@ void tick(){
  switch(digit){
 
 	case start:
+	  PORTC = 0x01;
 	break;	
 
 	case init:
+	  PORTC = 0x02;
 	break;
 
 	case Hash:
+	  PORTC = 0x03;
 	break;
 
 	case waitY:
+	  PORTC = 0x04
 	break;
 	
 	case unlock:
+	 PORTC = 0x05;
 	 PORTB = 0x01;
 	break;
 
@@ -83,6 +88,7 @@ int main(void) {
     /* Insert DDR and PORT initializations */
     	DDRA = 0x00 ; PORTA = 0xFF;
 	DDRB = 0xFF ; PORTB = 0x00;
+	DDRC = 0xFF ; PORTC = 0x00;
     /* Insert your solution below */
     while (1) {
 	  tick(); 
